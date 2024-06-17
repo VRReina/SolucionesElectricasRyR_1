@@ -1,0 +1,25 @@
+ /* Opacar la imagen */
+ .img-container {
+    position: relative;
+    width: 100%;
+}
+.img-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+}
+
+/* Estilos para el encabezado h1 */
+.h1-responsive {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 4vw; /* Tamaño de fuente relativo al ancho de la ventana */
+}
